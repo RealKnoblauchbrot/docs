@@ -1,0 +1,125 @@
+import { Callout } from 'nextra/components';
+
+# Frameworks
+
+Hello! You are trying to choose a Framework/Base, but you don't know which one fits you?
+Then you found the perfect place!
+
+This site is dedicated to providing you informations about the different frameworks, 
+their advantages and disadvantages without favoring one of them.
+
+<Callout type="info">
+  Keep in mind by the time you are reading this, these facts may be outdated. 
+  As this was written on: `07.09.2023`
+</Callout>
+
+## ESX Legacy
+ESX is a popular open source framework for creating economy-based roleplay servers on FiveM. 
+Allowing anyone to build their own custom servers with ease.
+Formerly a mod for essentialmode which the name derives from: "**Es**sentialmode e**x**tended"
+
+#### Advantages
+- ESX provides a barebone structure for your scripts, so you don't have to do everything from scratch.
+- It is the most popular framework for servers on FiveM, with many official and community resources, making it easier to make a server.
+- ESX is trusted by thousands of communities for the highest quality roleplay servers on FiveM.
+- It regularly receives updates.
+- Easy to use and has in depth configs.
+- Great script optimization to make sure it works on any computer!
+- Build in Features that make sure scripts can have perfect compatibility.
+- Reviews issues/pull-requests regularly, giving the community a oportunity to help the developement. 
+- Easy to add features like targeting/third eye, phone, fuel, etc.
+- Has a detailed VS Code Plugin that adds linting.
+- Easier for newcomers
+
+
+#### Disadvantages
+- Community lead support
+- Depends on database for most static data such as items, jobs, vehicles, etc.
+- Inventory metadata only available with ox_inventory
+- Outdated and incomplete documentation
+
+#### Features
+- Character registration (defining a player's name, sex, height and date of birth)
+- Multi Character System to allow player's to play multiple roles without any hassle.
+- Easily Extandable HUD using React
+- Propery / Housing System
+- A lot more!
+
+## QB Core
+QB Core is a fork of ESX v1 and an ever expanding framework for FiveM. It offers extensive customization, ease of use and active support.
+Formerly called: "QBUS" resp. a new edition.
+
+#### Advantages
+- Doesn't depend on the database for static data.
+- Build in metadata that is easily accessible.
+- One of the most popular frameworks and has therefore a surplus of avilable scripts.
+- Easy to use and configure.
+- Most of the official scripts explained in their documentation.
+
+#### Disadvantages
+- Very inactive/doesn't get any updates.
+- Bad Performance on both client and server.
+- Uses outdated systems like their inventory or targeting, doorlock systems. Just because their in-house developed.
+- Steep learning curve
+- Inactive community lead support
+- Outdated documentation
+- Hard to maintain code
+- Bad security
+
+#### Features
+- Character registration (defining a player's name, sex, height and date of birth)
+- Multi Character System to allow player's to play multiple roles without any hassle.
+- Targeting/Third Eye System
+- Propery System
+- A lot more!
+
+## QBox Core
+While originally forked from QBCore, many QBox resources have been refactored to improve code quality, enhance security, lower performance overhead, and integrate with [overextended](https://overextended.dev/) resources.
+
+#### Advantages
+- Semi-Backwards compatibility with QBCore scripts
+- Good performance on both client and server.
+- Realized that only using in-house scripts is hard to maintain and uses third-party resources like ([ox_lib](https://github.com/overextended/ox_lib)) and ([ox_inventory](https://github.com/overextended/ox_inventory)).
+- Very active and gets regularly updates.
+- Doesn't depend on the database for static data.
+- Build in metadata that is easily accessible.
+- Easy to use and configure.
+
+
+#### Disadvantages
+- Very new as a framework and doesn't have a lot of scripts dedicated directly to QBox itself
+- In beta and unstable
+- Steep learning curve including that there isn't any Documentation
+
+#### Features
+- Character registration (defining a player's name, sex, height and date of birth)
+- Multi Character System to allow player's to play multiple roles without any hassle.
+- A great open source inventory system ([ox_inventory](https://github.com/overextended/ox_inventory))
+- Targeting/Third Eye System ([ox_target](https://github.com/overextended/ox_target))
+- A really great open source phone ([npwd](https://github.com/project-error/npwd))
+- Propery System
+- A lot more!
+
+## Ox Core
+An experimental framework for FiveM. Limited support and breaking changes guaranteed.
+<Callout type="warning">
+  This framework does not have a stable (v1.0) release; breaking changes are likely. And should not be used on a production server
+</Callout>
+
+#### Advantages
+- Astonishing performance on both client and server
+- Top notch code quality and written by experienced programmers from the start. 
+- Build-In linting support for VS Code
+
+#### Disadvantages
+- Very small community since the framework itself is quite new.
+- Steep learning curve
+- Documentation is very short
+
+#### Features
+- Targeting/Third eye using
+- Detailed Inventory system
+- Doorlock system
+- Fuel System
+- Property System
+- Configuration done in server.cfg

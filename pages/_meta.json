@@ -1,6 +1,7 @@
 {
   "index": "Introduction",
   "fxserver": "FXServer",
+  "fivem": "FiveM",
   "about": {
     "title": "About",
     "type": "page"
