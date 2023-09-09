@@ -42,7 +42,7 @@ const DataTable: React.FC<DialogTabProps> = ({
               <TableCell sx={{color: "#fafbfc"}}>
                 {row.Number}
               </TableCell>
-              <TableCell variant="body" size= "small"align="right" sx={{ color: "#fafbfc"} }>{row.DLC}</TableCell>
+              <TableCell variant="body" size= "small"align="right" sx={{ color: "#fafbfc"} }>{row.DLC || row.NOTES}</TableCell>
             </TableRow>
           ))}
         </TableBody>
