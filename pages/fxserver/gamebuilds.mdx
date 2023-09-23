@@ -1,12 +1,14 @@
 import { Callout } from "nextra/components";
-import DataTable from "components/table";
+import DefinitionText from "../../components/definitionText"
+import Table from "components/table";
+import { MantineProvider, rem } from '@mantine/core';
 
 # Game Builds
 
 ## What Are they?
 
 The Game Build, is the version of the game you are running, often defined as the DLC version.
-Using these allows you to unlock certain parts of GTA, such as Vehicles, clothings and native functions.
+Using this allows you to unlock certain parts of GTA, such as Vehicles, clothing and native functions.
 
 <Callout type="info">
   For more info on this topic, Visit the [Cfx.re Docs](https://docs.fivem.net/docs/server-manual/server-commands/)
@@ -16,17 +18,39 @@ Using these allows you to unlock certain parts of GTA, such as Vehicles, clothin
 
 To set the game build your server uses, find the number that matches the DLC you want, from the lists below.
 
-You will Then want to navigate to your `server.cfg` (or use the `CFG Editor` inside txAdmin) and insert the following:
+You will Then want to navigate to your <DefinitionText text={"server.cfg"}/> (or use the <DefinitionText text={"CFG Editor"}/>) and insert the following:
 
 ```cfg
 sv_enforceGameBuild <number>
 ```
 > Note: Insert without the `<>`
 
-## Build Numbers
+<MantineProvider theme={{
+    fontSizes: {
+        sm: rem(16),
+    },
+    colorScheme: 'dark',
+    colors: {
+        // override dark colors here to change them for all components
+        dark: [
+            '#d5d7e0',
+            '#acaebf',
+            '#8c8fa3',
+            '#666980',
+            '#4d4f66',
+            '#292929',
+            '#292929',
+            '#111111',
+            '#0c0d21',
+            '#01010a',
+        ],
+    },
+}}>
+    ## Build Numbers
 
-### FiveM
+    ### FiveM
 
+<<<<<<< HEAD
 <DataTable rows = {[
   {DLC: 'San Andreas Mercenaries', Number: 2944 },
   {DLC: 'Los Santos Drug Wars', Number: 2802 },
@@ -40,17 +64,31 @@ sv_enforceGameBuild <number>
  {name: "Number", align: "inherit"},
  {name: "DLC Name", align: "right"},
 ]}/>
+=======
+    <Table rows = {[
+      {DLC: 'San Andreas Mercenaries', Number: 2944 },
+      {DLC: 'Los Santos Drug Wars', Number: 2802 },
+      {DLC: 'The Criminal Enterprises', Number: 2699 },
+      {DLC: 'The Contract', Number: 2545 },
+      {DLC: "Los Santos Tuners", Number: 2372 },
+      {DLC: 'Cayo Perico Heist', Number: 2189 },
+      {DLC: 'Los Santos Summer Special', Number: 2060 },
+      {DLC: 'Arena War', Number: 1604 },
+    ]} head = {[
+     {accessor: 'Number', width: "10%" },
+     {accessor: 'DLC', width: "60%", title: 'DLC Name'},
+    ]}/>
 
-### RedM
+    ### RedM
 
-<DataTable rows = {[
-  {DLC: 'September 2022 update, limited content/changes.', Number: 1491 },
-  {DLC: 'July 2021 update, includes new content from Blood Money DLC.', Number: 1436 },
-  {DLC: 'December 2020 update, works with newer game editions such as RDO.', Number: 1355 },
-  {DLC: 'Mid 2020 update, not compatible with Red Dead Online licenses.', Number: 1311 },
-]} head = {[
- {name: "Number", align: "inherit"},
- {name: "Notes", align: "right"},
-]}/>
-
-
+    <Table rows = {[
+        {DLC: 'September 2022 update.', Number: 1491 },
+        {DLC: 'July 2021 update - Blood Money DLC.', Number: 2802 },
+        {DLC: 'December 2020 update', Number: 1355 },
+        {DLC: 'Mid 2020 update', Number: 1311 },
+    ]} head = {[
+        {accessor: 'Number', width: "10%" },
+        {accessor: 'DLC', width: "60%", title: 'Notes/DLC Name'},
+    ]}/>
+</MantineProvider>
+>>>>>>> upstream/main
